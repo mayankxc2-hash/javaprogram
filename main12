@@ -1,0 +1,17 @@
+class outer{
+    int outervalue= 10;
+     class Inner{
+            int innervalue = 20;
+        void display() {
+            System.out.println("Add outer and inner value= " + outervalue+innervalue);
+            
+        }
+    }
+}
+public class Main12{
+ public static void main(String[] args){
+     outer o = new outer();
+    outer.Inner i = o.new Inner();
+    i.display();
+ }
+}

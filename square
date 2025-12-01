@@ -1,0 +1,16 @@
+class outer{
+    int outervalue= 5;
+     class Inner{
+        void display() {
+            System.out.println("square of outer number " + outervalue*outervalue);
+            
+        }
+    }
+}
+public class Main{
+ public static void main(String[] args){
+     outer o = new outer();
+    outer.Inner i = o.new Inner();
+    i.display();
+ }
+}

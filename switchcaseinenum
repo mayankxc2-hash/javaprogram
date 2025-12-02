@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+enum color{
+    green , pink , yellow
+}
+public class switchenum{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter color name: ");
+        String text = sc.next();
+        color p =null;
+        color c= color.pink;
+        switch(c) {
+            case green: 
+            System.out.println("color is green");
+            break;
+            case pink: 
+            System.out.println("color is pink");
+            break;
+            case yellow:
+                System.out.println("color is yellow");
+                break;
+        }
+    }
+}

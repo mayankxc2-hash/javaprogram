@@ -1,0 +1,20 @@
+public class enumFandC {
+    enum Color {
+    PINK("soft"), 
+    BLUE("cool"), 
+    GREEN("natural");
+
+    String description;        // field
+
+    Color(String desc) {       // constructor
+        this.description = desc;
+    }
+}
+public static void main(String[] args) {
+    for (Color c : Color.values()) {
+    System.out.println(c + " = " + c.description);
+}
+
+}
+
+}

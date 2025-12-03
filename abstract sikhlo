@@ -1,0 +1,25 @@
+abstract class parent{
+    abstract void show();
+    parent(){
+    System.out.println("meow meow");
+}
+}
+class child extends parent{
+    void show(){
+        System.out.println("idk ye kyu hai");
+    }
+    child(){
+     super();
+    }
+    void display(){
+     System.out.println("dhainchuu dhainchuu");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        child c= new child();
+        c.display();
+        c.show();
+    }
+}

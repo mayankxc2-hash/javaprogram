@@ -1,0 +1,27 @@
+abstract class Car {
+    abstract void start(); // abstract method
+
+    Car() {
+        System.out.println("bhagoo bhagoo"); // constructor
+    }
+}
+
+class Tesla extends Car {
+
+    // must implement abstract method
+    void start() {
+        System.out.println("Tesla starts silently");
+    }
+
+    void display() {
+        System.out.println("suiiiiiiii");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Tesla c = new Tesla(); // creates object
+        c.display();           // prints "suiiiiiiii"
+        c.start();             // prints "Tesla starts silently"
+    }
+}

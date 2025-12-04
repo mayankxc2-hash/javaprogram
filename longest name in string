@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        String[] names = {"messi", "ronaldo", "jaggu", "cristiano ronaldo"};
+
+        String longest = names[0];
+
+        for (String n : names) {
+            if (n.length() > longest.length()) {
+                longest = n;
+            }
+        }
+
+        System.out.println("Longest name: " + longest);
+    }
+}

@@ -1,0 +1,17 @@
+public class Main{
+    public static void main(String[] args){
+       int[] arr= {1,5,2,7,9 };
+       double sum = 0;
+       for( int x: arr) sum += x ;
+      
+      double avg = sum/arr.length;
+      
+      int count =0;
+      for(int x: arr){
+          if(x> avg) count++;
+          }
+         System.out.println("count= " + count);
+         
+      }
+}
+      
